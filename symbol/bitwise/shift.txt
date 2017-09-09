@@ -1,0 +1,5 @@
+left shift:
+	high bit discard, low bit append zero
+
+right shift:
+	low bit discard, high bit append symbol bit

@@ -1,0 +1,6 @@
+compiler allocate a continuous space when array declare,
+
+pointer declaration allocate 4 bytes for the storage of pointer,
+as function parameter, array parameter is same as pointer parameter,
+array name can be regard as constant pointer in many case, the value is unchangable,
+pointer is variable essentially, the stored value can be regard as address in memory

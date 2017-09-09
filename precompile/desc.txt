@@ -1,0 +1,3 @@
+see <self-improvement of a programmer>
+
+do not define variable in header file, do it in dot c file, and extern variables if you need.

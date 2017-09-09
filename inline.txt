@@ -1,0 +1,1 @@
+inline is internal link type, so it can be put in head file.

@@ -1,0 +1,9 @@
+
+first member start with offset 0
+
+every member align with the minimum(by type size) in assigned parameter n.
+	offset address and member occupied size need alignment in the meanwhile.
+	structure body alignment parameters are its' maximum of all member.
+
+the total length of structure body must be the integer times of every align parameters
+

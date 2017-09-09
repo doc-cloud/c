@@ -1,0 +1,7 @@
+variable is an alias of a memory section, we can access this section by the alias, or via address value as well,
+
+pointer is a variable in essence, it will occupy a certain amount of memory, for save the value of memory address value
+
+we shall make sure that one pointer has the ability to point a memory address.
+
+pointer size is 4 bytes in 32-bit machine

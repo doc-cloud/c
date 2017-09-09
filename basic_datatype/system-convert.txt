@@ -1,0 +1,56 @@
+
+==========================================
+
+original code
+
+the higest bit is signed bit(0 for positive, 1 for negative), other bits is the absolute value
+
++7 -> 0000 0111
+-7 -> 1000 0111
++0 -> 0000 0000
+-0 -> 1000 0000
+
+127 -> 0111 1111
+-127 -> 1111 1111
+
+==========================================
+
+base minus code
+
++7 -> 00000111
+-7 -> 11111000
+-0 -> 11111111
+
+127 0111 1111
+-127 1000 0000
+
+a number value is positive, then the base minus code is same as the original
+a number value is negative, then the signed bit is 1, other bits is opposite to the original
+
+========================================
+
+ahead them are not good at computing, eg: original code 7 and 7, it must judge the signed bit after sum up.
+positive: original, minus, complement are same
+positive: the higest bit is 1, other bits are the original's opposite, and +1 for entire number
+
+-7的补码：=
+ 10000111(original)
+ 11111000(minus)
+ 11111001(complement)
++0 complement is 00000000
+-0 complement is 00000000
+
+补码符号位不动，其他位求反，最后整个数 + 1，得到原码
+
+subtraction can implement by addition
+
+7 - 6 = 1
+7 complement + -6 complement : 00000111 + 11111010 = 100000001
+after the signed bit discard, 00000001 is 1 complement
+
+-7 + 6 = -1
+-7 complement + 6 complement : 11111001 + 00000110 = 11111111
+11111111 is -1 complement
+
+===========================================
+

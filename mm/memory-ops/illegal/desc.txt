@@ -1,0 +1,21 @@
+structure member pointer:
+structure member is not initialization, no enough memory for structure pointer,
+./struct-ptr-noinit.c
+
+memory uninitialization:
+memory allocation success, without initialization,
+./mem-noinit.c
+
+array border crossing:
+./over-arr.c
+
+memory leak:
+some logic, return without release
+./ret-no-free.c
+
+multi release:
+function work too much, do release sth. not ought to be released
+./multi-free.c
+
+use released:
+./mem-use-freed.c

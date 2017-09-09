@@ -1,0 +1,10 @@
+block access, block size: 1 2 4 8 16
+
+different type data in memory location, need alignment,
+
+fault address, maybe abort, when the read data is not align,
+it need two bus cycle to access memory, low performance
+some hardware platform can only access specific type from specific address, hardware abort otherwise
+
+pragma pack
+change the default alignment method

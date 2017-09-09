@@ -1,0 +1,7 @@
+
+const variable is read-only, the essence is still variable.
+
+occupy space in memory,
+
+only useful for the compiler.
+

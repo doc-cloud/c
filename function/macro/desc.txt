@@ -1,0 +1,7 @@
+=========================
+
+side effect:
+macro has side effect
+function has no side effect
+
+=========================

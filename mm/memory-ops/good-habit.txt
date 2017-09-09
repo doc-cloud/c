@@ -1,0 +1,23 @@
+======================
+
+if (NULL != ptr)
+
+=======================
+
+in case of array over border
+remember this, recommend to use soft array
+
+=========================
+
+who use it, who release it
+
+=========================
+
+ptr after free
+
+use
+ptr = NULL;
+
+after free(ptr), in case of a moment to call this pointer, without the knowledge about the pointer(legal or not)
+
+==============================

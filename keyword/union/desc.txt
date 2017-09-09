@@ -1,0 +1,13 @@
+maximum area space, influenced by system endian
+
+union C {
+	int i;
+	char c;
+};
+
+union C c;
+
+c.i = 1;
+return 1 == c.c;
+
+endian judgement

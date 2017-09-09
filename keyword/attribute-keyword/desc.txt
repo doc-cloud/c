@@ -1,0 +1,3 @@
+variables in C can have their own attribution
+use attribute keyword when variable definition.
+it can indicate variables' own meaning.

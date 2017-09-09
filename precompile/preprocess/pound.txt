@@ -1,0 +1,7 @@
+
+#:
+precompiler turn macro to string
+
+##:
+adhere two pound in precompile stage
+

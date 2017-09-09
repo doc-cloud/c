@@ -1,0 +1,12 @@
+handled by precompiler.
+
+different product line share the same suit of code, it can distinguish different editions.
+
+avoid include the same header file
+
+it is similar to if ... else, conditional compilation is a kind of compile indicate instruction,
+control if compile a block code
+
+apply in header file, we care the file we include, do not care the including relation of the included files.
+my client's client is not my client.
+我附庸的附庸, 不是我的附庸.

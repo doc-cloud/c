@@ -1,0 +1,8 @@
+
+< , <= , > , >=,  point to same array is the precondition ,
+== , != have no limits
+
+one on heap and one on stack, it is meaningless on comparison
+
+even though for stack both, the result will be various because of the variant alignment implementation of various compiler
+

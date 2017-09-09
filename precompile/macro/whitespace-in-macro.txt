@@ -1,0 +1,22 @@
+#define f (x) ((x) - 1)
+
+f(x) represent ((x) - 1) ?
+or
+f represent (x) ((x) - 1) ?
+
+latter, because there is a whitespace between f and (x)
+
+how to be a legal C expression?
+
+if x is type name:
+typedef int x; type convert twice of -1
+
+if x is a function pointer, it is call function which is x point to,
+parameter is (x) - 1, x should be an element in function pointer array
+
+T x;
+typedef void (*T)(T);
+useless, after T declaration, can define T
+
+typedef void (*T)(void *);
+the parameter type of the function x point to is not always be T, it can be any type which T can convert to

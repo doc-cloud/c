@@ -1,0 +1,3 @@
+compiler delete comment, replace by whitespace,  /**/ cannot be nested, start with /*, end with */
+
+y = x /*z;    y = x / *z;

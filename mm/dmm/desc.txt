@@ -1,0 +1,29 @@
+=================================
+
+C operations are base on memory,
+variable and array are memory alias, how to allocate this memory is determined in compile stage,
+must define length when array definition, the array length confirmed in compile stage
+
+but the memory is not always enough
+
+=================================
+
+void *malloc(size_t size);
+
+void free(void *ptr);
+
+malloc may allocate more memory than parameter, do not rely on this
+
+void* calloc(size_t num, size_t size);
+void* realloc(void* pointer, size_t new_size);
+
+calloc parameters represent the type info of returned memory, calloc will initialize it as 0,
+
+realloc use for modify an allocated memory block
+after use realloc, should use its' return value
+when the first parameter is NULL, it is equal to malloc
+
+calloc is unit with type size to allocate memory and initialize
+realloc can reset memory size
+
+=======================================

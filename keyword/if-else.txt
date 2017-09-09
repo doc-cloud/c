@@ -1,0 +1,8 @@
+if-else match rule :
+else will match with the nearest if.
+
+bool variable brace in condition judgement, without comparison.
+
+0 == a instead of a == 0;
+
+float should not compare with 0, define the precision before the real work.

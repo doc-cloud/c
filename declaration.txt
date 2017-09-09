@@ -1,0 +1,3 @@
+declare a variable to name var, for C, it can be sub-definite
+
+main in 'a' file, function implementation in 'b' file, we shall do declaration in 'a' file,

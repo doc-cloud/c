@@ -1,0 +1,7 @@
+function parameters and return value,
+
+function parameter
+not to willing change parameters' value inside of function.
+
+return value
+indicate that return value is unchangable, use for return pointer, see const_ret.c

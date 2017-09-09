@@ -1,0 +1,23 @@
+backslash is escape character in the meanwhile,
+as a continue character, it can be contain in program text,
+as a escape character, it should show up in string or character.
+
+escape char:
+	use for non-echo character, in string or character,
+
+non-echo character:
+	indicate a action, it cannot be show up
+
+\a, alarm
+\b, backspace
+\n, change line
+\r, carriage return
+\t, table
+\\, slash
+\', single quote
+\", double quotation marks
+\?, question
+\v, vertical table
+\f, paper pass, change page
+\ddd 1-3 bits octal number indicated character
+\xbb 1-2 bits hexical number indicated character

@@ -1,0 +1,22 @@
+bit field:
+different bit section in different integer variables
+
+declaration:
+similar to ordinary, bit field member must declare to int, signed int, and unsigned int,
+integer after : indicate the bit width of bit field,
+
+situation:
+abundant structure, member size is small
+
+demo:
+text format program
+
+struct CHAR {
+	unsigned ch : 2;			/* 128 characters */
+	unsigned font : 6;			/* 64 fonts */
+	unsigned size : 19			/* 0 - 524287 */
+};
+
+16 bit machine cannot compile it , 32 bit machine have two possible way,positive sequence or negative sequence
+
+adopt memory align mode while compile a structure

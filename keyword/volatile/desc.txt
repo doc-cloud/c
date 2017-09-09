@@ -1,0 +1,18 @@
+compiler warning indicator
+get the value from memory every time,
+
+decorate object
+value that might be accessed by multi thread,
+value that might changed by unknown factors
+
+extension:
+can const and volatile decorate a same variable?
+
+const volatile int i = 0;
+what attributions it has? compiler handle the variable in what way?
+
+desc:
+
+hardware registers in parallel device, eg. PSW
+non-automatic variables will be accessed in an ISR
+variables shared by several tasks in multi thread application

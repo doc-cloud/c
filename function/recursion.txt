@@ -1,0 +1,8 @@
+recursion
+function can invoke itself in the function procedure,
+
+component:
+recursive pointer, invoke itself by different parameters
+out pointer, do not recursive any longer,
+
+must use condition judgement, otherwise the procedure will not be end,

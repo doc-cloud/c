@@ -1,0 +1,49 @@
+================================
+
+procedure oriented,
+decompose complex problem, the step can be done one by one,
+function is reflection of procedure oriented in C, every step of problem solution can use function,
+
+=================================
+
+declaration and definition
+declaration:
+tell the existence of entity to compiler in an early stage, eg: variable, function, etc.
+definition:
+indicate the entity to compiler explicitly
+
+===================================
+
+function parameter:
+it is similar to local variable essentially, allocate memory on stack, initialization is same as the calling actual parameter,
+evaluate order rely on the implementation of compiler
+./func-param.png
+./func-param.c
+
+==================================
+
+sequent pointer,
+the last moment to modify variable in executing process,
+all operations be done before sequent pointer should reflect on later access,
+
+when every full expression is done,
+每个完整表达式结束时,
+after calculate every operation object of &&, ||, ? : and , expression 
+&& , || , ? :以及逗号表达式的每个运算对象计算之后。
+
+after evaluation of all actual parameters in function invoking is be done
+函数调用中对所有实参的求值完成之后。
+
+./func-seq-point.c
+
+====================================
+
+function default designation
+
+func(i, j);
+
+default designate to
+
+int func(int i, int j);
+
+====================================

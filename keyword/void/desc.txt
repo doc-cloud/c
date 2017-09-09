@@ -1,0 +1,8 @@
+left side of assignment expression, accept any type pointer,
+right side of assignment expression, type convertion acquired,
+
+the same type pointer assign each other.
+
+void is empty type, C standard has no rule for it, a specific compiler should define it by itself.
+
+there is no void variable, C has no rule for void alias, how much memory it has? I don't know.

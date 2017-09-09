@@ -1,0 +1,41 @@
+========================
+
+concept:
+there is no string type in C, use character array to simulate string
+string is character array end up with '\0' essentially,
+it can be allocated in stack, heap, and read-only section
+
+=========================
+
+string length:
+the number of characters contained in string,
+the string length is the number of characters before the first '\0' in a string,
+confirm the string length by '\0',
+note:
+	the return value of strlen is define to unsigned int,
+	it can not be negative when they subtract with each other.
+
+===========================
+
+strcpy implementation
+
+==========================
+
+strcpy VS strncpy:
+
+string function without limit
+judge length by '\0',
+strcpy, strcat, make sure that destination can save total string,
+strcmp, do not change parameter value, end up with '\0', import parameter must contain '\0',
+improvement:
+	limited length string function
+
+string function with limit
+strncpy,
+when source string less than len, remain space fill in '\0',
+when source string more than len, len characters will be dupicate, it will not end up with '\0'
+
+strncat copy n characters to destination string at maximum, always append '\0' after result string,
+it will not padding the remain space in destination string by '\0'
+
+strncmp just compare pre n characters equality.

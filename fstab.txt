@@ -1,0 +1,2 @@
+uuid?
+can linux get uuid of disk in windows via network?

@@ -1,0 +1,29 @@
+======================================
+
+array of C has their own type,
+determined by element type and array size, int arr[5] type is int [5],
+you can rename it by typedef, typedef type{name}[size];
+
+typedef int (AINT5)[5];
+typedef char (ACHAR10)[10];
+
+array definition:
+AINT5 iArr;
+ACHAR10 cArr;
+
+========================================
+
+array pointer:
+point to an array, array name is the address of first element, but it is not array start address, &ArrName can get the start address of array,
+
+array type define array pointer:
+ArrType *ArrPtr;
+
+define array pointer directly:
+type (*ArrPtrType)[size];
+
+========================================
+
+pointer array:
+elements are a specific type pointer,
+eg : keyword search

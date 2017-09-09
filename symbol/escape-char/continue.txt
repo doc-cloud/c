@@ -1,0 +1,6 @@
+continue char usage:
+compiler will strip '\', character after '\' will parse to next line
+
+there should not show a whitespace after backslash, and avoid whitespace before the next line of backslash
+
+useful for define a macro procedure process, and it can show up in program text

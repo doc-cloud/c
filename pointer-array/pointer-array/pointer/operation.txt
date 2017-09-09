@@ -1,0 +1,11 @@
+
+pointer operations:
+p + n = (unsigned int)p + sizeof(*p) * n
+
+just subtract between pointers, and they must be same type,
+p1 - p2 = ((unsigned int)p1 - (unsigned int)p2) / sizeof(type)
+
+the subtract has significance when the pointers point to elements in the same array,
+result is the subscript difference of elements which be pointed.
+the result is undefined when the array is not the same one.
+

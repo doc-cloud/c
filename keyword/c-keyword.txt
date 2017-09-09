@@ -1,0 +1,233 @@
+
+datatype keyword:
+
+================================
+
+basic data type(5):
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+void
+declare that function has no return value or parameters, declare no type pointer, discard operating result explicitly.
+
+----------------------
+
+char
+character type data, a kind of integer data
+
+---------------------
+
+int
+integer data, machine length designated by compiler usually
+
+-----------------------
+
+float
+single precision, a kind of float data, six bits reserved after decimal pointer.
+
+----------------------
+
+double
+double precision, a kind of float data, more precision than float, fifteen or sixteen bits reserved after decimal pointer.
+
+===================================
+
+type decorate(4)
+
+------------------------
+
+short
+
+decorate int, short integer data, int omitting is supported
+
+--------------------------
+
+long
+
+decorate int, short integer data, int omitting is supported
+
+----------------------------
+
+signed
+
+decorate int, signed integer
+
+----------------------------
+
+unsigned
+
+decorate int, unsigned integer
+
+=======================================
+
+complex type(5)
+
+struct
+
+structure declaration
+
+----------------------------
+
+union
+
+union declaration
+
+-----------------------------
+
+enum
+
+enumeration declaration
+
+-----------------------------
+
+typedef
+
+declare type alias
+
+----------------------------
+
+sizeof
+
+get the size of a specific data type or variable
+
+========================================
+
+storage rank(6)
+
+auto
+
+automatic variable, allocated and released by compiler automatically
+
+---------------------------------
+
+static
+
+static variable, allocated in static memory area, it indicates file internal when decorate function
+
+----------------------------------
+
+register
+
+register variable, advice that compiler store variable into register, it can decorate function former parameters, deliver parameters via register instead of stack.
+
+-----------------------------------
+
+extern
+
+external variable, definition is in another object file, and it can appoint that declared in other file
+
+-----------------------------------
+
+const
+
+indicates that variable cannot modified by current thread / process (it may be modified by other thread / process)
+
+------------------------------------
+
+volatile
+
+indicates that variable can modified by OS (it may be modified by other thread / process), force compiler get value from memory every time.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+===================================================
+
+flow control keyword
+
+jump structure(4)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+return
+
+use in function body, return a specific value(or void, return no value)
+
+-----------------------------------------
+
+continue
+
+end current loop, begin next loop
+
+------------------------------------------
+
+break
+
+get out of current loop, or switch body,
+
+-----------------------------------------
+
+goto
+
+jump without conditions
+
+============================================================
+
+branch structure(5)
+
+if
+
+conditional sentence
+
+-------------------------------------
+
+else
+
+negative conditional branch, collaborate with if sentence
+
+-------------------------------------
+
+switch
+
+switch sentence, multi branch conditional sentence,
+
+--------------------------------------
+
+case
+
+branch tag in switch sentence,
+
+------------------------------------
+
+default
+
+other branch in switch sentence, optional
+
+============================================================
+
+loop structure(3)
+
+for
+
+for loop structure,
+
+for (1; 2; 3)
+	4;
+
+the sequence is 1 -> 2 -> 4 -> 3 -> 2...., 2 is condition
+
+----------------------------------------------
+
+do
+
+do loop structure,
+
+do
+	1;
+while(2);
+
+the sequence is 1 -> 2 -> 1...., 2 is condition
+
+-----------------------------------------------
+
+while
+
+while loop structure,
+
+while (1)
+	2;
+
+the sequence is 1 -> 2 -> 1...., 1 is condition,
+
+=====================================================
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

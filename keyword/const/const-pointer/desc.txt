@@ -1,0 +1,23 @@
+there is no '*', it be it was.(该是什么就是什么),
+
+there is '*', left value - right pointer
+
+left value:
+
+const is on the left side of '*', the data pointer point to is constant value
+
+const int *p;
+int const *p;
+
+p is changable, the data pointer point to is unchangable.
+
+right pointer:
+const is on the right side of '*', the pointer is constant value
+
+int *const p;
+p is unchangable, the content p refer to is changable.
+
+both left value and right pointer
+const int * const p;
+
+p itself and the content refer to is unchangable.

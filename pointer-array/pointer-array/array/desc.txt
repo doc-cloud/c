@@ -1,0 +1,30 @@
+======================================
+
+a continuous memory space,
+size = sizeof(array_type) * array_size
+
+array name can be regard as constant pointer point to first element,
+
+===================================
+
+CPU has incremental model, pointer way is faster,
+
+in theory, pointer has higher performance compare to subscript way when move in array as a fixed increment,
+it can be better when 1 == increment
+
+there is one more multiplication in array subscript way
+
+eg:./ptr-arr-speed.c
+
+==========================================
+
+arr and &arr
+arr is address of the first element,
+&arr is address of the whole array,
+the meaning difference is pointer calculation of arr and &arr
+
+==============================================
+
+when arr as a parameter, degenerate to pointer
+
+=======================================

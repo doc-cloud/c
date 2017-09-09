@@ -1,0 +1,61 @@
+[root@Linkerist-Lenovo-G500:22:58:52: /vay/ds #] gcc dlinklist_test.c dlinklist.c 
+dlinklist_test.c: In function ‘main’:
+dlinklist_test.c:9:20: warning: initialization makes pointer from integer without a cast [enabled by default]
+  dlinklist *list = dlinklist_create();
+                    ^
+there is no declaration for dlinklist_create in header file.
+
+################ dlinklist_test.c
+
+#include "dlinklist.h"
+
+#include <stdio.h>
+
+int main()
+{
+	printf("dlinklist_create...\n\n");
+	dlinklist *list = dlinklist_create();
+
+	return 0;
+}
+
+################ dlinklist.c
+
+#include "dlinklist.h"
+
+#include <stdlib.h>
+
+typedef struct {
+	dlinklistnode header;
+	dlinklistnode *slider;
+	int length;
+} dlinklist_t;
+
+dlinklist *dlinklist_create(void)
+{
+	dlinklist_t *dlist = (dlinklist_t *)malloc(sizeof(dlinklist_t));
+	if (NULL != dlist) {
+		dlist->header.next = NULL;
+		dlist->header.prev = NULL;
+		dlist->slider = NULL;
+		dlist->length = 0;
+	}
+	return dlist;
+}
+
+############## dlinklist.h
+
+#ifndef __DLINKLIST_H__
+#define __DLINKLIST_H__
+
+typedef void dlinklist;
+
+typedef struct _tag_dlinklistnode dlinklistnode;
+
+struct _tag_dlinklistnode {
+	dlinklistnode *next, *prev;
+};
+
+dlinklist *dlinklist_create(void);
+
+#endif

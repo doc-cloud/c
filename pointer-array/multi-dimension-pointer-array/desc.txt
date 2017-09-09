@@ -1,0 +1,32 @@
+===========================================
+
+there is only one dimension array in C, array size should be confirmed in compile period,
+
+array element can be any type, and also can be another array,
+
+in C, there is just array size and the address of first element is confirmed in compile period,
+
+=============================================
+
+pointer to pointer,
+pointer is variable essentially,
+value deliver and address deliver problem is also existed,
+eg:reset dynamic array size
+
+./reset.c
+
+=============================================
+
+two dimension array,
+arrange by one dimension way in memory, the first dimension is the first level array,
+the second dimension is specific value, array name can be regard as constant pointer
+
+eg : travel two dimension array in one dimension way
+./arr-ptr-travel.c
+
+======================================
+
+two dimension pointer
+dynamic allocation for two dimension array
+eg:
+./2ndptr.c

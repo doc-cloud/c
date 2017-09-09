@@ -1,0 +1,5 @@
+function type:
+return value, parameters' type, parameter number determine the function type,
+rename a function type by typedef.
+
+typedef type name(parameter list);

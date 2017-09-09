@@ -1,0 +1,65 @@
+[root@Linkerist-Lenovo-G500:21:07:57: /mnt/win/app/tree-1.6.0 #] make
+make: Warning: File `tree.c' has modification time 5.4e+04 s in the future
+gcc -O4 -Wall  -DLINUX -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c -o tree.o tree.c
+tree.c: In function ‘main’:
+tree.c:497:5: warning: format ‘%lld’ expects argument of type ‘long long int’, but argument 3 has type ‘off_t’ [-Wformat=]
+     fprintf(outfile, "    <size>%lld</size>\n", size);
+     ^
+tree.c: In function ‘psize’:
+tree.c:1241:3: warning: format ‘%lld’ expects argument of type ‘long long int’, but argument 3 has type ‘off_t’ [-Wformat=]
+   return sprintf(buf, sizeof(off_t) == sizeof(long long) ? " %11lld" : " %9ld", size);
+   ^
+tree.c: In function ‘main’:
+tree.c:466:11: warning: ignoring return value of ‘chdir’, declared with attribute warn_unused_result [-Wunused-result]
+      chdir(curdir);
+           ^
+gcc -O4 -Wall  -DLINUX -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c -o unix.o unix.c
+gcc -O4 -Wall  -DLINUX -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c -o html.o html.c
+html.c: In function ‘html_listdir’:
+html.c:207:10: warning: ignoring return value of ‘system’, declared with attribute warn_unused_result [-Wunused-result]
+    system(hcmd);
+          ^
+html.c: In function ‘htmlr_listdir’:
+html.c:456:10: warning: ignoring return value of ‘system’, declared with attribute warn_unused_result [-Wunused-result]
+    system(hcmd);
+          ^
+gcc -O4 -Wall  -DLINUX -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c -o xml.o xml.c
+xml.c: In function ‘xml_fillinfo’:
+xml.c:400:3: warning: format ‘%lld’ expects argument of type ‘long long int’, but argument 3 has type ‘off_t’ [-Wformat=]
+   fprintf(outfile, " size=\"%lld\"", ent->size);
+   ^
+gcc -O4 -Wall  -DLINUX -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c -o hash.o hash.c
+gcc -O4 -Wall  -DLINUX -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -c -o color.o color.c
+gcc -s -o tree tree.o unix.o html.o xml.o hash.o color.o
+make: warning:  Clock skew detected.  Your build may be incomplete.
+[root@Linkerist-Lenovo-G500:21:08:01: /mnt/win/app/tree-1.6.0 #] clock -w
+[root@Linkerist-Lenovo-G500:21:08:01: /mnt/win/app/tree-1.6.0 #] clock
+The program 'clock' is currently not installed. You can install it by typing:
+apt-get install xview-clients
+[root@Linkerist-Lenovo-G500:21:08:08: /mnt/win/app/tree-1.6.0 #] apt-get install xview-clients
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  xviewg
+The following NEW packages will be installed:
+  xview-clients xviewg
+0 upgraded, 2 newly installed, 0 to remove and 320 not upgraded.
+Need to get 849 kB of archives.
+After this operation, 2,159 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://mirrors.aliyun.com/ubuntu/ trusty/universe xviewg amd64 3.2p1.4-28.1 [780 kB]
+Get:2 http://mirrors.aliyun.com/ubuntu/ trusty/universe xview-clients amd64 3.2p1.4-28.1 [68.4 kB]
+Fetched 849 kB in 0s (1,107 kB/s)       
+Selecting previously unselected package xviewg.
+(Reading database ... 239477 files and directories currently installed.)
+Preparing to unpack .../xviewg_3.2p1.4-28.1_amd64.deb ...
+Unpacking xviewg (3.2p1.4-28.1) ...
+Selecting previously unselected package xview-clients.
+Preparing to unpack .../xview-clients_3.2p1.4-28.1_amd64.deb ...
+Unpacking xview-clients (3.2p1.4-28.1) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Setting up xviewg (3.2p1.4-28.1) ...
+Setting up xview-clients (3.2p1.4-28.1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.6) ...
+[root@Linkerist-Lenovo-G500:21:08:30: /mnt/win/app/tree-1.6.0 #]

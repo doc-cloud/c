@@ -1,0 +1,19 @@
+================================
+
+static variable in code block scope,
+
+===================================
+
+static variable out of code block scope,
+
+existing when program running, accessed only which file defined it.
+
+===============================
+
+global variable
+
+same as static variable, but it can accessed by multi files
+
+===============================
+
+functions are alway be global, you can declare it as static

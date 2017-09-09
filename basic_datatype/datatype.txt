@@ -1,0 +1,112 @@
+basic data type,
+data type essence : fix memory block alias, the template to create a variable
+
+variable essence :
+alias of continuous memory storage space.
+program allocate or rename storage space by variable
+use storage space by the name of variable
+
+short, long, long long, unsigned int
+
+short, 32bit OS is 2 byte, 16 bits
+long, in 32bits OS，long is 4 bytes, in 64bits OS, windows is 4 bytes, unix is 8 bytes。
+int always be 4 bytes
+long long is 64 bits OS data type, 8 bytes, for 32bit OS, the register is 32bits, low efficient for long long
+9l,9L,9ll,9LL,9u,9ull,9ULL
+
+overflow,
+a larger number assign to integer, the higher bits are discard,
+a little number assign to integer, the signed bit will be inherited.
+
+endian,
+big endian,
+------
+| 12 |
+------
+| 34 |
+------
+| 56 |
+------
+| 78 |
+------
+
+little endian,
+------
+| 78 |
+------
+| 56 |
+------
+| 34 |
+------
+| 12 |
+------
+
+=======================
+
+char,
+
+char is an integer, just for one byte,
+
+signed char is -128 - 127,
+unsigned char is 0 - 255
+
+========================
+
+float,
+on 32-bits OS is 4 bytes, double is 8 bytes,
+low efficient
+
+=======================
+
+string,
+there is no string datatype in C, it is simulate on a sequent characters,
+"" is the way to express string in C,
+
+========================
+
+32-bits OS
+
+Linux
+修饰符		数据类型	占用空间		取值范围
+[signed]	short [int] 	16 位（ 2 个字节） 	-32768 到 32767 (-2^15 ~ 2^15-1)
+		int 		32 位（ 4 个字节)	-2147483648 到 2147483647 (-2^31 ~ 2^31-1)
+		long [int]	32 位（ 4 个字节)	-2147483648 到 2147483647 (-2^31 ~ 2^31-1)
+
+unsigned	short [int]	16 位（ 2 个字节）	0 到 65535 (0 ~ 2^16-1)
+		int 32 位	（ 4 个字节）		0 到 4294967295 (0 ~ 2^32-1)
+		long [int]	32 位（ 4 个字节）	0 到 4294967295 (0 ~ 2^32-1)
+
+类型名		占用空间		取值范围
+float		32 位（ 4 个字节）	1.4E-45 ～ 3.4E+38， -1.4E-45 ～ -3.4E+38
+double		64 位（ 8 个字节）	4.9E-324 ～ 1.7E+308, -4.9E-324 ～ -1.7E+308
+
+浮点数包含符号位、小数位和指数位三部分。例如，小数 3.14159 在内存中的符号位为
+“ +”，小数部分为.31415，指数位为 1，连接在一起即为“ +0.314159 * 101 = 3.14159”。
+在 C 语言中，一个小数会被默认为 double 类型的值，因此在为一个 float 类型的变量赋值时需要注意
+一点，所赋值的后面一定要加上字母“ F”（或者小写“ f”），而为 double 类型的变量赋值时，其所赋值后
+面的字符“ D”（或小写“ d”），可以省略。具体示例如下：
+float f = 123.4f; //为一个 float 类型的变量赋值，后面必须加上字母 f
+double d1 = 100.1; //为一个 double 类型的变量赋值，后面可以省略字母 d
+double d2 = 199.3d; //为一个 double 类型的变量赋值，后面可以加上字母 d
+
+另外，在程序中也可以为一个浮点数类型变量赋予一个整数数值，示例如下：
+float f = 100; //声明一个 float 类型的变量并赋整数值
+double d = 100; //声明一个 double 类型的变量并赋整数值
+
+------------------------------------
+
+float 和 double 之间的数据转换
+由于浮点型变量是由有限的存储单元组成的，因此只能提供有限的有效数字。在有效位以外的数字将
+被舍去，这样可能会产生一些误差，例如，将 3.1415926 赋给一个 float 型变量，但它只能保证前 7 位是有
+
+#include <stdio.h>
+void main()
+{
+	float a ;
+	a = 3.141592612;
+	printf("a=%f\n",a);
+}
+
+程序运行结果为 3.141593。 我们会发现该输出的值与给定的值之间有一些误差。
+这是由于 a 是单精度浮点型变量，它只能提供 7 位有效数字，而 3.141592612 已经超出了其取值范围，所
+以后面的几位被舍去了。

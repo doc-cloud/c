@@ -1,0 +1,8 @@
+put variable into register, speed up, withOUT guarantee.
+the value of the variable must be accepted by CPU register.
+
+cannot get address via &.
+
+cannot allocate global variable, (it is a waste of register)
+
+register int reg = 0;

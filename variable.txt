@@ -1,0 +1,5 @@
+ascii, underline, and number,
+
+the first character must be ascii or underline
+
+it is must be ';' terminated for every line

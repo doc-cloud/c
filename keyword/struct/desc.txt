@@ -1,0 +1,11 @@
+empty structure
+variant compiler do it in various way,
+gcc - 0 byte
+g++ - 1 byte
+
+soft array
+
+typedef struct {
+	int len;
+	int array[];
+} __soft_array;

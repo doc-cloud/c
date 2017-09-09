@@ -1,0 +1,58 @@
+it canbe use as right value in expression
+
+=================================
+
+concept:
+array is a set of some same type element,
+
+=================================
+
+array size:
+initialize it by a value when define, it is real initialization.
+low performance without initialization, they are different things in natural.
+
+array store element in a continuous memory space.
+
+the number of elements can be assigned explicitly or implicitly.
+
+===================================
+
+array address and array name:
+array address represents the whole array address,
+
+array name represents the address of first element.
+array address use & to get,
+the address of first element is equal to array address in some respects such as value, share different concept
+
+====================================
+
+blind spot of array name:
+array name can be regard as a constant pointer, it cannot be left value,
+arr_a = arr_b is a fault form,
+
+array name "point to" the start address of the first element's address of array in memory,
+array name can use for right value in expression
+in these cases, array name cannot be regard as a contant pointer:
+	array name as a parameter of 'sizeof' operator
+	array name as a parameter of '&' operator
+
+array name just a constant pointer mostly, it is not pointer, we cannot confused with external declarations
+
+===========================================
+
+define as pointer, declare as array:
+ptr is a pointer who point to char, declared as array name in a file,
+compiler regard the value of variable as an char type array, travel it,
+compiler has different handling towards pointer and array,
+handle pointer, one addressing operation,
+handle array,
+
+see ./array_declaration.c for more details
+
+==============================================
+
+differences between &arr and arr
+arr + 1 = (unsigned int)arr + sizeof(*arr);
+&arr + 1 = (unsigned int)&arr + sizeof(*&arr);
+
+================================================

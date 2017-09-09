@@ -1,0 +1,14 @@
+bracket problem,
+sometimes, it need bracket to protect it.
+
+operator side effect
+
+side effect of ++ operator, calculate the value repeatly,
+for example, while(i < n)biggest = max(biggest, x[i++]), it should make sure that macro paramters have no side effect
+
+#define putc(x,p) (--(p)->_cnt >= 0 ? (*(p)->_ptr++ = (x)) : _flsbuf(x,p))
+x , calculate once, p may side effect, ANSI C give the warning
+toupper function, toupper(*p++) error
+
+two large expression,
+max(a,max(b,max(c,d))) VS max(max(a,b),max(c,d))

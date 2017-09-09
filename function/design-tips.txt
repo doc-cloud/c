@@ -1,0 +1,9 @@
+same input get same output, avoid memory function,
+scale should be small, less parameters
+avoid global variable, make function be independent,
+name convey its' meaning,
+once pointer parameters, use for output parameter, you can add `const' to modify it,
+import parameter check, do not ignore return value type,
+do not return stack pointer,
+some do not return value, for the link expression, you can add it,
+function name should not conflict with meaning

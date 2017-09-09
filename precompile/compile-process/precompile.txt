@@ -1,0 +1,11 @@
+gcc -E -o file.i file.c
+
+strip all comment, replace by whitespace
+
+strip all define, expand to macro
+
+handle condition compile instruction
+
+handle include
+
+reserve progma need by compiler

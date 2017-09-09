@@ -1,0 +1,5 @@
+local variable, allocate memory in stack, cannot declare global variable.
+
+auto int g = 0;
+
+the default attribution of local variable in C

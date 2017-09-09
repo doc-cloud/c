@@ -1,0 +1,7 @@
+gcc -S -o file.s file.i
+
+lexical analysis, keyword, identifier, immediately
+
+grammatical analysis, is the expression legal?
+
+semantic analysis, is the expression legal, in a deeper level

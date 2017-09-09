@@ -1,0 +1,5 @@
+an instruction word for compiler, compiler finishs some specific action for it.
+
+it relative to compiler and OS, cannot transplant with different compiler.
+
+pre processor ignore some #pragma instruction which it cannot regonize.

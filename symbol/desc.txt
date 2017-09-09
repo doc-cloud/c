@@ -1,0 +1,3 @@
+avoid logical operator, bitwise operator, mathematical operator show up in the same expression,
+
+indicate priority by brackets.

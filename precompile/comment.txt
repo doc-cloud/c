@@ -1,0 +1,5 @@
+// or /*  */
+
+//, single line comment,
+
+/*  */, multi line, the C original style

@@ -1,0 +1,37 @@
+=============================
+
+program file memory map:
+code in executable file relationship:
+./code-exec-mapping.png
+
+file memory mapping:
+./file-mem-mapping.png
+
+=============================
+
+sections usage:
+
+stack section:
+become existing after program run, it is foundation of program
+
+bss section:
+uninitialize global variable and static variable
+
+text section:
+executable code in program
+
+data section:
+initialized global variable and static variable
+
+rodata section:
+constant in program, string constant
+
+===============================
+
+corresponding relationship:
+static storage represents .bss and .data section in program,
+local variable space is on stack,
+dynamic memory space is on heap,
+executable code is on .text
+
+===================================

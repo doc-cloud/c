@@ -1,0 +1,3 @@
+gcc -c -o file.o file.s
+
+turn assembly code into excutable instruction

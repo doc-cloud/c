@@ -1,0 +1,10 @@
+
+break, and default,
+
+the value of case should be integer or character
+
+the marshalling sequence of case instance:
+marshalling sentences by alphabetic or numberic order.
+normal case place the former.
+default handle the real default situation.
+

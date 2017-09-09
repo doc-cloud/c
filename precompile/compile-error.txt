@@ -1,0 +1,10 @@
+#error message
+compile stop, output compile error info,
+compiler indicator custom programmer's compile error info, message should not braced in "",
+
+#warning message
+compile will not stop, output warning info.
+
+#line linenumber filename
+redefine line number and filename, renumber the source code
+essentially, redefine __LINE__ and __FILE__

@@ -1,0 +1,15 @@
+=========================================
+
+wild pointer:
+pointer is a illegal memory address, it is not must be NULL, point to a useless memory value,
+
+local pointer variable without initialization
+./before-init.c
+
+use pointer which has release yet,
+./use-freed.c
+
+the variable which pointer point to has destroyed before pointer be destroyed,
+./use-returned.c
+
+=============================================

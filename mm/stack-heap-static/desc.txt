@@ -1,0 +1,35 @@
+============================
+
+stack:
+maintain function invoking context, no function, local variable if there is no stack,
+
+store info need by a function invoking
+function parameter, return address,
+local variable,
+function invoking context,
+old ebp:return pointer
+
+=============================
+
+heap:
+data on stack is release after function return,
+you cannot return function local variable, eg:local array
+
+heap is a large free space, use for program freely,
+it is effective before initiative release,
+
+free list, bit map, object pool,
+
+store global variable, static variable,(said in of)
+
+=================================
+
+static memory
+
+allocate memory along with program running, until program end, storage space size was confirmed in compile stage,
+global variable and static variable, store in execuate file
+
+when multi users develop a project, there can be function rename, functions will disturb each other in different files,
+so we do need static function to use in the files which defined them, they are internal functions
+
+=============================

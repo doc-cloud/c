@@ -1,0 +1,32 @@
+=====================================
+
+array parameters will degenerate to pointer parameters, the meaning is,
+only way is value copy to deliver parameters in C
+
+when deliver an array parameter to function, regard array name as constant pointer to deliver the address of array name,
+
+high performance is the goal of C, the efficiency will be low when copy the whole array,
+
+the degeneration is also the place C graceful.
+
+=========================================
+
+two dimension array degeneration, every element of this array is one dimension array
+
+omit the first dimension
+void f(int a[5]);	void f(int a[]);	void f(int* a);
+
+void g(int a[3][3]);		void g(int a[][3]);	void g(int (*a)[3]);
+
+cannot deliver any multi dimension array to a function, provide all length info except the first dimension
+
+./multi-arr-param.c
+
+=========================================
+
+array parameter limit
+one dimension parameter, must provide length info which indicate that the array end position
+two dimension parameter, cannot deliver to function directly,
+three or more dimension paramter, cannot use
+
+=====================================

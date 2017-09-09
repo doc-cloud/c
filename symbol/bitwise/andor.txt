@@ -1,0 +1,8 @@
+&:
+and bit by bit
+
+|:
+or bit by bit
+
+^:
+xor bit by bit

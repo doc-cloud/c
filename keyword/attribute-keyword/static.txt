@@ -1,0 +1,13 @@
+local variable
+in program static area, action scope is function inside, global life cycle.
+
+global variable
+in declared file, initialize once, action scope in declared file.
+
+static keyword indicates the `static' attribute of variable.
+action scope qualifier meaning in the meantime.
+
+local variable decorated by `static' store in static area of program.
+action scope qualifier meaning in the meantime.
+
+global variable action scope in declared file.

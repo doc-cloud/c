@@ -1,0 +1,26 @@
+rely on stdarg.h
+
+======================
+
+do not use vargs,
+./non-var-param.c
+
+=====================
+
+use vargs,
+./var-param.c
+
+==========================
+
+limits
+
+vargs must from left to right, one by one,
+parameter list must exist a confirmed named parameter
+参数列表中至少要存在一个确定的命名参数
+vargs macro cannot judge the actual existing parameter number
+vargs macro cannot judge the actual existing parameter type (printf print test interview puzzle)
+
+warning:
+if there is fault type designated in va_arg, the result is unpredicatable
+
+==========================

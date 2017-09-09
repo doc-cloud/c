@@ -1,0 +1,15 @@
+some macro define to this type,
+
+assistant definition for complex macro, incase of the error while refer.
+see more on http://www.spongeliu.com/415.html
+
+procedure block function, incase of multi return point, avoid the goto uniform control for procedure flow.
+see do-while-0.c
+
+avoid the warning of empty macro,
+for various CPU architectures, many cases use empty macro in kernel, it may be result to warning while compiling,
+do{}while(0) can avoid this.
+
+like function precedure,
+when you define a complex feature, there are many variable or other stuffes, but you do not want to increase a function.
+use do{}while(0), jam your logic into this body, take no account to repeat variable name.

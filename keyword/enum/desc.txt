@@ -1,0 +1,12 @@
+enum is an user-defined type, it is an integer in entity
+constant is increase 1 base on the previous number.
+enum variable can get the disperse value of as it defined moment.
+
+the difference with define, 
+define is the value replace simply, it is not so-called constant value.
+enum is the real constant variable
+
+define cannot be debug, it's original symbol stripped after pre-compile, debugger cannot get it's position
+enum can be debug, (get into the symbol table)
+
+define has no type info, enum is a specific constant type.

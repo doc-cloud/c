@@ -1,0 +1,11 @@
+define from beginning of line to end, can use macro
+
+it is easy to make mistake 
+
+no call expense
+
+cannot recursive define
+compiler do not know its' existance,
+replace it, different from function, eg. i++
+
+array in function will degenerate to pointer,

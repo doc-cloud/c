@@ -1,0 +1,3 @@
+#define FOOTYPE struct foo *
+
+FOOTYPE a, b;

@@ -1,0 +1,6 @@
+rename an existing data type, no new type generated,
+
+typedef type cannot be extend by unsigned and signed,
+
+compare with define
+typedef is an rename machanism, define is string replace simply, share no concept on alias

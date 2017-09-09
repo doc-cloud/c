@@ -1,0 +1,37 @@
+=========================================
+
+logical error:
+#define assert(e) if(!e) assert_error(__FILE__,__LINE__)
+
+if()
+	assert(...)
+else
+	assert(...)
+when it unfold, logical error, else hang on with if
+
+===========================================
+
+; in the statement's tail:
+#define assert(e) {if(!e) assert_error(__FILE__,__LINE__);}
+
+if()
+	assert(...);
+else
+	assert(...);
+
+in some coding style:
+
+if() {
+	assert(...);
+} else {
+	assert(...);
+}
+
+there is ; before else, error again
+
+==========================================
+
+use the shortcut grammer:
+#define assert(e) ((void)((e) || _assert_error(__FILE__,__LINE__)))
+
+===========================================

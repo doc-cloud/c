@@ -1,0 +1,26 @@
+==================================
+
+extern int ...
+define external variable or function
+
+==================================
+
+extern "C"
+compile as standard C style,
+in case of variant compiler, C++ compiler and some variant compiler will compile function and variable by its' own way
+
+==================================
+
+if you know printf prototype, add it, you can omit the include header files
+
+int printf(const char *, ...);
+
+void main()
+{
+	printf...
+}
+
+compiler will search the definition from other files according to this prototype, and expand the scope to this file, so you can use printf in this file
+when declare external function, whatever is there a keyword extern, external function and return value type, function name, and parameter list is must be same
+
+===================================

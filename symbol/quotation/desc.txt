@@ -1,0 +1,12 @@
+single quotation marks,
+'a' + 1 indicates ASCII of a with the addition of 1
+character braced by single quotation marks indicates an integer
+
+double quotation marks,
+"a" occupy two characters in memory, "a" + 1 is a calculate form of pointer
+character braced by double quotation marks indicates a pointer
+
+every thing in "" is string
+
+compiler accepts the comparsion between character and string, the meaning is fault
+string can assign to character, it is insignificance as well

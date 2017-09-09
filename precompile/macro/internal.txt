@@ -1,0 +1,12 @@
+you can define log macro, not available function replace,
+filename pair, line number error, indicates the line number in function body, not the line number function be called
+
+__FILE__	compile filename
+
+__LINE__	current line number
+
+__DATE__	date
+
+__TIME__	time
+
+__ STDC__	is the compiler obey the C standard?
