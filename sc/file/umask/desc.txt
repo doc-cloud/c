@@ -1,0 +1,13 @@
+
+umask
+0002
+
+touch test.txt 777
+ls -l test.txt
+-rw-rw-r--
+
+umask 007
+touch test2.txt 777
+ls -l test2.txt
+-rw-rw----
+

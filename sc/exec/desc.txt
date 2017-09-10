@@ -1,0 +1,5 @@
+
+gcc -o echoarg args.c
+
+
+

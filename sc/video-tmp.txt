@@ -1,0 +1,69 @@
+
+占用当前终端输入的就是前台。fg %num,
+bg &num 让编号为num的后台任务在后台运行。不指定num是选择+的那个。
+
+fg &num 让编号为num的后台任务在前台运行。不指定num是选择+的那个。
+
+grep -H:显示文件名。-n显示行号。-i忽略大小写。
+
+dlopen:load shared lib dynamic
+
+void *dlopen(const char *filename,int flag);
+the return value called handle.
+RTLD_NOW:load immediately 
+RTLD_LAZY:load while using.
+
+char *dlerror(void):
+return a string descript the error info.
+
+void *dlsym(void *handle,const char *symbol)
+find the address in shared lib .
+
+int dlclose(void *handle)
+close the shared lib . release in mem .
+
+getpagesize
+
+/proc/pid/maps , smaps 是关于本进程内存映射的。
+
+brk , sbrk 重新制定数据段的结束位置。sbrk(increment)。都返回原来的数据段结束地址。
+
+
+/dev/tty当前终端。
+/dev/pts/n编号为n的虚拟终端。
+
+不可重入函数问题。
+使用了全局变量。静态局部变量的函数。可能一直阻塞的函数。
+缓冲区由好多个输入输出共用。所以是全局变量。
+阻塞信号。
+用信号集。可阻塞多个信号。
+阻塞信号并不丢弃信号。
+处理未决信号：sigpending
+
+可保存原来的信号集。自己使用过后恢复。
+
+socketpair匿名本地网络。
+产生一对相互连接的网络套接字。可以用来在两个进程间进行双向通信。是一种IPC方式。
+
+进程间通信对象是内核对象。即使进程结束他仍然存在。ipcs -a to show the IPC object，ipcrm to delete IPC object.
+
+msgsnd 要发送消息数据部分的长度。不包括类型。四个字节的越界。破坏栈的数据。
+msgsnd(id,&m,sizeof(m) - sizeof(long,0));
+
+fflush(stdout)立即显示。
+
+pthread_setcanceltype
+
+访问完立即解锁。
+pthread_mutex_lock(&mutex);
+int vflag = flag;
+pthread_mutex_unlock(&mutex);
+if(vflag){
+....
+}
+
+尽量用多线程。CPU调度以线程为单位。
+
+文件锁操作。
+
+mmap映射文件到内存中。像访问内存一样访问文件。

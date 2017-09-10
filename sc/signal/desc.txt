@@ -1,0 +1,39 @@
+
+在signal.h头文件中，提供了一些函数用以处理执行过程中所产生的信号。
+宏：
+SIG_DFL
+SIG_ERR
+SIG_IGN
+SIGABRT
+SIGFPE
+SIGILL
+SIGINT
+SIGSEGV
+SIGTERM
+函数：
+signal();
+raise();
+变量：
+typedef sig_atomic_t
+sig_atomic_t 类型是int类型，用于接收signal函数的返回值。
+以SIG_开头的宏用于定义信号处理函数
+SIG_DFL 默认信号处理函数。
+SIG_ERR	表示一个错误信号，当signal函数调用失败时的返回值。
+SIG_IGN	信号处理函数，表示忽略该信号。
+SIG开头的宏是用来在下列情况下，用来表示一个信号代码：
+SIGABRT	异常终止（abort函数产生）。
+SIGFPE	浮点错误（0作为除数产生的错误，非法的操作）。
+SIGILL	非法操作（指令）。
+SIGINT	交互式操作产生的信号（如CTRL - C）。
+SIGSEGV	无效访问存储（片段的非法访问，内存非法访问）。
+SIGTERM	终止请求。
+signal 函数
+void(*signal(int sig,void (*func)(int)))(int);
+上面的函数定义中，sig 表示一个信号代码（相当于暗号类别），即是上面所定义的SIG开头的宏。当有信号出现（即当收到暗号）的时候，参数func所定义的函数就会被调用。如果func等于SIG_DFL，则表示调用默认的处理函数。如果等于SIG_IGN，则表示这个信号被忽略（不做处理）。如果func是用户自定义的函数，则会先调用默认的处理函数，再调用用户自己定义的函数。 自定义函数，有一个参数，参数类型为int，用来表示信号代码（暗号类别）。同时，函数必须以return、abort、exit 或 longjump等语句结束。当自定义函数运行结束，程序会继续从被终止的地方继续运行。（除非信号是SIGFPE导致结果未定义，则可能无法继续运行）
+如果调用signal函数成功，则会返回一个指针，该指针指向为所指定的信号类别的所预先定义的信号处理器。 
+如果调用失败，则会返回一个SIG_ERR，同时errno的值也会被相应的改变。
+raise 函数
+int raise(int sig);
+发出一个信号sig。信号参数为SIG开头的宏。
+如果调用成功，返回0。否则返回一个非零值。
+
