@@ -1,5 +1,3 @@
-
 ./noblock in.txt err.txt
 get 100000 bytes from in.txt
 done
-
