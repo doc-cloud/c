@@ -1,0 +1,27 @@
+
+#./buffer
+stdin is fully-buffered
+buffer size is 0
+discriptor is 0
+
+stdout is line-buffered
+buffer size is 1024
+discriptor is 1
+
+stderr is unbuffered
+buffer size is 0
+discriptor is 2
+
+#./buffer < in.txt 1> out.txt 2> err.txt
+stdin is fully-buffered
+buffer size is 0
+discriptor is 0
+
+stdout is fully-buffered
+buffer size is 4096
+discriptor is 1
+
+stderr is unbuffered
+buffer size is 0
+discriptor is 2
+

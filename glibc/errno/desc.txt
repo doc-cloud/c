@@ -1,0 +1,10 @@
+
+error.h 是 C语言 C标准函式库里的头文件，定义了通过错误码来返回错误信息的宏：
+
+errno 宏定义为一个int型态的左值, 包含任何函数使用errno功能所产生的上一个错误码。
+
+一些表示错误码，定义为整数值的宏：
+EDOM 源自于函数的参数超出范围,例如 sqrt(-1)
+ERANGE 源自于函数的结果超出范围,例如s trtol("0xfffffffff",NULL,0)
+EILSEQ 源自于不合​​法的字符顺序,例如 wcstombs(str, L"\xffff", 2)
+

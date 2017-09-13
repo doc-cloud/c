@@ -1,0 +1,13 @@
+*	这是一个可选的星号表示该数据是从流中被读取的，但忽略，即，它不会存储在相应的参数。
+width	这指定在当前读出操作被读取的最大字符数
+modifiers	Specifies a size different from int (in the case of d, i and n), unsigned int (in the case of o, u and x) or float (in the case of e, f and g) for the data yiibaied by the corresponding additional argument: h : short int (for d, i and n), or unsigned short int (for o, u and x) l : long int (for d, i and n), or unsigned long int (for o, u and x), or double (for e, f and g) L : long double (for e, f and g)
+type	的字符，指定将要读取的数据的类型以及它是如何被读取。请参阅下表
+
+类型	合格输入	参数类型
+c	Single character: Reads the next character. If a width different from 1 is specified, the function reads width characters and stores them in the successive locations of the array passed as argument. No null character is appended at the end.	char *
+d	Decimal integer: Number optionally preceeded with a + or - sign	int *
+e,E,f,g,G	Floating yiibai: Decimal number containing a decimal yiibai, optionally preceeded by a + or - sign and optionally folowed by the e or E character and a decimal number. Two examples of valid entries are -732.103 and 7.12e4	float *
+o	OctalInteger:	int *
+s	String of characters. This will read subsequent characters until a whitespace is found (whitespace characters are considered to be blank, newline and tab).	char *
+u	Unsigned decimal integer.	unsigned int *
+x,X	Hexadecimal Integer	int *

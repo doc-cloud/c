@@ -1,0 +1,5 @@
+
+./gets_risk < risk.txt
+
+Segmentation fault
+
