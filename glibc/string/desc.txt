@@ -1,0 +1,32 @@
+
+<string.h> 头文件里包含了C语言的最常用的字符串操作函数
+
+宏：
+NULL 空
+变量：
+typedef size_t
+
+函数：
+memchr();在某一内存范围中查找一特定字符
+memcmp(); 比较内存内容
+memcpy(); 拷贝内存内容
+memmove(); 拷贝内存内容
+memset(); 将一段内存空间填入某值
+strcat(); 连接两字符串
+strncat(); 连接两字符串
+strchr(); 查找字符串中第一个出现的指定字符
+strcmp(); 比较字符串
+strncmp();比较2个字符串的前N个字符
+strcoll(); 采用目前区域的字符排列比较字符串
+strcpy(); 拷贝字符串
+strncpy(); 拷贝字符串
+strcspn(); 返回字符连续不含指定字符的字符数
+strerror(); 返回错误原因的描述字符串
+strlen(); 计算字符串长度
+strpbrk(); 查找字符串中第一个出现的指定字符
+strrchr(); 查找字符串中最后出现的指定字符
+strspn();返回字符串连续不含指定字符的字符数
+strstr(); 在一字符串中查找指定的字符串
+strtok(); 分割字符串
+strxfrm(); 转换字符串
+

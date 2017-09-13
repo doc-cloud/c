@@ -1,0 +1,4 @@
+
+1.on windows, text mode, "\r\n" indicates new line, if open a file by text mode, and enter "\n" by fpus. etc., function will add "\r" before "\n", "\r\n" get into file actually
+2.on UNIX/Linux OS, text mode, "\n" indicates new line, so there is no difference between text mode and binary mode
+

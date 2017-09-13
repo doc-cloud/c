@@ -1,0 +1,17 @@
+
+<stddef.h> 头文件定义了一些标准定义，许多定义也会出现在其他的头文件里
+宏命令：NULL 和 offsetof() 
+
+变量：
+typedef ptrdiff_t
+typedef size_t
+typedef wchar_t
+
+变量和定义：
+ptrdiff_t是两个指针相减的结果
+size_t是sizeof一个关键词得到的无符号整数值
+wchar_t是一个宽字符常量的大小，是整数类型
+NULL是空指针的常量值
+
+offsetof(type, member-designator);这个宏返回一个结构体成员相对于结构体起始地址的偏移量（字节为单位），type是结构体的名字，member-designator是结构体成员的名字。
+
